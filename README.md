@@ -10,5 +10,5 @@
 &emsp;&emsp; * 所有的基于项（item）的模型类都基于`QAbstractItemModel`<br>
 &emsp;&emsp; * 模型只在内存临时存储数据，模型的数据来源可以是其他类、文件、数据库。<br>
 #### QAbstractItemModel类的继承关系图
-
+  ![](images/QAbstractItemModel类继承关系.png) <br>
 ## 
