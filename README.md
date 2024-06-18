@@ -12,5 +12,5 @@
 #### QAbstractItemModel类的继承关系图
   ![](images/QAbstractItemModel类继承关系.png) <br>
 #### QAbstractItemView类的继承关系图
-  
+  ![](images/QAbstractItemView.png) <br>
 ## 
