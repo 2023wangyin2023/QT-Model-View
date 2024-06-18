@@ -9,5 +9,6 @@
 &emsp;&emsp;**注意：** 模型、视图和代理之间使用信号与槽通信<br>
 &emsp;&emsp; * 所有的基于项（item）的模型类都基于`QAbstractItemModel`<br>
 &emsp;&emsp; * 模型只在内存临时存储数据，模型的数据来源可以是其他类、文件、数据库。<br>
+#### QAbstractItemModel类的继承关系图
 
 ## 
