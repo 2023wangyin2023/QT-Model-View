@@ -11,4 +11,6 @@
 &emsp;&emsp; * 模型只在内存临时存储数据，模型的数据来源可以是其他类、文件、数据库。<br>
 #### QAbstractItemModel类的继承关系图
   ![](images/QAbstractItemModel类继承关系.png) <br>
+#### QAbstractItemView类的继承关系图
+  
 ## 
