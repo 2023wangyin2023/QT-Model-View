@@ -12,7 +12,7 @@
 #### QAbstractItemModel类的继承关系图
   ![](images/QAbstractItemModel类继承关系.png) <br>
 `数据模型`中存储数据的基本单元都是项（Item），每个项有一个行号、一个列号、还有一个父项 <br>
-  ![](images/Model.png) <br>
+  ![](images/三种Model.png) <br>
 `QModelIndex`表示模型索引的类。模型索引提供数据存取的一个临时指针。
 ```c++
 // table model
