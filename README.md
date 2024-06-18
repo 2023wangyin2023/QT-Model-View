@@ -12,13 +12,28 @@
 #### QAbstractItemModel类的继承关系图
   ![](images/QAbstractItemModel类继承关系.png) <br>
 `数据模型`中存储数据的基本单元都是项（Item），每个项有一个行号、一个列号、还有一个父项 <br>
+  ![](images/Model.png) <br>
+`QModelIndex`表示模型索引的类。模型索引提供数据存取的一个临时指针。
+```c++
+// table model
+QModelIndex indexA = model->index(0,0,QModelIndex());
+QModelIndex indexC = model->index(2,1,QModelIndex());
+// tree model
+QModelIndex indexB = model->index(1,0,indexA);
+```
+`项的角色`：在为数据模型的一个项设置数据时，可以赋予其不同项的角色的数据。
+> 模型中的每个项都有一组与其关联的数据元素，每个元素都有自己的角色。视图使用这些角色向模型指示它需要哪种类型的数据。
+```c++
+void QStandardItem::setData(const QVariant &value,int role=Qt::UserRole+1);
 
+QVariant QStandardItem::data(int role = Qt::UserRole+1)const;
+```
 #### QAbstractItemView类的继承关系图
   ![](images/QAbstractItemView.png) <br>
 &emsp;&emsp;**视图组件**：显示数据时，只需要调用视图类的setModel()函数；视图组件不存储数据。 <br>
 &emsp;&emsp;`便利类`为组件的每个节点或单元格创建一个项（Item），用项存储数据、格式设置等；`便利类`没有数据模型，将界面与数据绑定了；`便利类`缺乏对大型数据源进行灵活处理的能力，适用于小型数据的显示和编辑。<br> <br>
 ___代理___ <br>
 * 代理就是在视图组件上为编辑数据提供编辑器
-* 如在表格组件中编辑一个单元格的数据时，缺省是使用一个QListEdit编辑器框。代理负责从数据模型获取相应的数据，然后显示在编辑器里，修改数据后，又将其存到数据模型中
+> 如在表格组件中编辑一个单元格的数据时，缺省是使用一个QListEdit编辑器框。代理负责从数据模型获取相应的数据，然后显示在编辑器里，修改数据后，又将其存到数据模型中
 * QAbstractItemDelegate是所有代理类的基类。<br>
 ## 
