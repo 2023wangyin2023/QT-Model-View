@@ -41,9 +41,9 @@ ___代理___ <br>
 * QAbstractItemDelegate是所有代理类的基类。<br>
 > **自定义代理**<br>
 > 您可以设计几个自定义代理类,在编辑单元格的数据时，默认的代理编辑器是**QLineEdit**编辑框，若自定义代理类，可使用QSpinBox、QDoubleSpinBox、QComboBox等作为代理编辑器<br>
-QAbstractItemDelegate是所有代理类的抽象基类，QStyledItemDelegate是视图组件使用的缺省的代理类，QItemDelegate也是类似功能的类。区别在于，QStyledItemDelegate可以使用当前的样式表来设置绘制组件，因此建议使用QStyledItemDelegate <br>
-定义的类必须重写实现的几个函数：<br>
-* createEditor():创建用于编辑模型数据的widget组件，如QSpinBox、QComboBox
-* setEditorData():从数据模型获取数据，供widget组件进行编辑
-* setModelData():将Widget组件上的数据更新到数据模型上
-* updataEditorGeometry():用于给Widget组件设置一个合适的大小
+> QAbstractItemDelegate是所有代理类的抽象基类，QStyledItemDelegate是视图组件使用的缺省的代理类，QItemDelegate也是类似功能的类。区别在于，QStyledItemDelegate可以使用当前> 的样式表来设置绘制组件，因此建议使用QStyledItemDelegate <br><br>
+> 定义的类必须重写实现的几个函数：<br>
+> * createEditor():创建用于编辑模型数据的widget组件，如QSpinBox、QComboBox
+> * setEditorData():从数据模型获取数据，供widget组件进行编辑
+> * setModelData():将Widget组件上的数据更新到数据模型上
+> * updataEditorGeometry():用于给Widget组件设置一个合适的大小
