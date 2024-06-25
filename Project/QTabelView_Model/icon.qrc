@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>icon/insert-row.png</file>
+        <file>icon/middle-align.png</file>
+        <file>icon/open 打开文件.png</file>
+        <file>icon/粗体.png</file>
+        <file>icon/居右.png</file>
+        <file>icon/居左.png</file>
+        <file>icon/删除行.png</file>
+        <file>icon/数据预览.png</file>
+        <file>icon/添加-行.png</file>
+        <file>icon/退出.png</file>
+    </qresource>
+</RCC>
